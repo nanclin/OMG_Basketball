@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BasketballController : MonoBehaviour {
 
+    // references
     public float MoveSpeed = 10;
     public Transform Ball;
     public Transform PosDribble;
@@ -11,13 +12,28 @@ public class BasketballController : MonoBehaviour {
     public Transform Arms;
     public Transform Target;
 
+    // cameras
+    public List<Camera> MulticamList;
+    public Camera OriginalCamera;
+
     // variables
     private bool IsBallInHands = true;
     private bool IsBallFlying = false;
     private float T = 0;
+    private bool IsMulticamOn;
 
     // Update is called once per frame
     void Update() {
+
+        // multicam
+        if (Input.GetKeyDown(KeyCode.M)) {
+            IsMulticamOn = !IsMulticamOn;
+
+            foreach (var camera in MulticamList) {
+                camera.gameObject.SetActive(IsMulticamOn);
+            }
+            OriginalCamera.gameObject.SetActive(!IsMulticamOn);
+        }
 
         // walking
         Vector3 direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));

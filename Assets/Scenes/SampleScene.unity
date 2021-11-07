@@ -239,6 +239,34 @@ PrefabInstance:
       propertyPath: PosOverHead
       value: 
       objectReference: {fileID: 840920475}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: OriginalCamera
+      value: 
+      objectReference: {fileID: 963194227}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1506893801}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1411425922}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1363560074}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1294106624}
+    - target: {fileID: 1995911435, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
+      propertyPath: MulticamList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1294106624}
     - target: {fileID: 1992381874059634886, guid: 43425a9c45ff94961955ee8b8e9ce7bb, type: 3}
       propertyPath: m_Name
       value: Character Luka Magic
@@ -619,7 +647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 70.474, y: 180, z: 0}
 --- !u!1 &1411425920
 GameObject:
@@ -702,7 +730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 38, y: 0, z: 0}
 --- !u!1 &1506893799
 GameObject:
@@ -785,7 +813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 38, y: 0, z: 0}
 --- !u!4 &1611575931 stripped
 Transform:
